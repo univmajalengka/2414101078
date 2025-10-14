@@ -1,0 +1,72 @@
+body {
+  background-color: #f5f9ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0d47a1, #1976d2);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+  position: relative;
+}
+
+.hero button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.marquee {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: move 12s linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.cat-card {
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.cat-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cat-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  margin-top: 4rem;
+}
+
+.admin-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #1976d2;
+}
